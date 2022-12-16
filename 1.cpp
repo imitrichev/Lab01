@@ -3,7 +3,7 @@
 
 //2. y=x^3 cos(x) - e^(2x)
 
-using namespace std
+using namespace std;
 
 double addend1(double x)
 {
