@@ -38,10 +38,8 @@ TEST(FunctionTesting, test_y){
   EXPECT_DOUBLE_EQ(y(-1),-0.999847695-0.13533528323);
 }
 
-int main()
+int main(int argc, char **argv)
 {
    ::testing::InitGoogleTest(&argc, argv);
    return RUN_ALL_TESTS();
-   cout<<"Hello world!"<<endl;
-   return 0;
 }
