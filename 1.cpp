@@ -23,7 +23,7 @@ double y(double x)
 TEST(FunctionTesting, test_addend1) {
   EXPECT_DOUBLE_EQ(addend1(0),0.0);
   EXPECT_DOUBLE_EQ(addend1(1),0.999847695);
-  EXPECT_DOUBLE_EQ(addend1(-1),−0.999847695);
+  EXPECT_DOUBLE_EQ(addend1(-1),-0.999847695);
 }
 
 TEST(FunctionTesting, test_addend2) {
@@ -35,7 +35,7 @@ TEST(FunctionTesting, test_addend2) {
 TEST(FunctionTesting, test_y){
   EXPECT_DOUBLE_EQ(y(0),-1.0);
   EXPECT_DOUBLE_EQ(y(1),0.999847695-7.38905609893);
-  EXPECT_DOUBLE_EQ(y(-1),−0.999847695-0.13533528323);
+  EXPECT_DOUBLE_EQ(y(-1),-0.999847695-0.13533528323);
 }
 
 int main()
