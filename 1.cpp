@@ -1,5 +1,5 @@
 #include <iostream>
-#include <math>
+#include <math.h>
 
 //2. y=x^3 cos(x) - e^(2x)
 
