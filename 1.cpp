@@ -22,8 +22,8 @@ double y(double x)
 
 TEST(FunctionTesting, test_addend1) {
   EXPECT_NEAR(addend1(0),0.0,1e-6);
-  EXPECT_NEAR(addend1(1),0.999847695,1e-6);
-  EXPECT_NEAR(addend1(-1),-0.999847695,1e-6);
+  EXPECT_NEAR(addend1(1),0.54030230586,1e-6);
+  EXPECT_NEAR(addend1(-1),0.54030230586,1e-6);
 }
 
 TEST(FunctionTesting, test_addend2) {
@@ -34,8 +34,8 @@ TEST(FunctionTesting, test_addend2) {
 
 TEST(FunctionTesting, test_y){
   EXPECT_NEAR(y(0),-1.0,1e-6);
-  EXPECT_NEAR(y(1),0.999847695-7.38905609893,1e-6);
-  EXPECT_NEAR(y(-1),-0.999847695-0.13533528323,1e-6);
+  EXPECT_NEAR(y(1),0.54030230586-7.38905609893,1e-6);
+  EXPECT_NEAR(y(-1),0.54030230586-0.13533528323,1e-6);
 }
 
 int main(int argc, char **argv)
