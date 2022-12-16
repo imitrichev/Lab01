@@ -8,7 +8,7 @@ using namespace std;
 
 double addend1(double x)
 {
-	return x*x*x + cos(x);
+	return x*x*x * cos(x);
 }
 
 double addend2(double x)
@@ -21,21 +21,21 @@ double y(double x)
 }
 
 TEST(FunctionTesting, test_addend1) {
-  EXPECT_DOUBLE_EQ(addend1(0),0.0);
-  EXPECT_DOUBLE_EQ(addend1(1),0.999847695);
-  EXPECT_DOUBLE_EQ(addend1(-1),-0.999847695);
+  EXPECT_NEAR(addend1(0),0.0,1e-6);
+  EXPECT_NEAR(addend1(1),0.999847695,1e-6);
+  EXPECT_NEAR(addend1(-1),-0.999847695,1e-6);
 }
 
 TEST(FunctionTesting, test_addend2) {
-  EXPECT_DOUBLE_EQ(addend2(0),1.0);
-  EXPECT_DOUBLE_EQ(addend2(1),7.38905609893);
-  EXPECT_DOUBLE_EQ(addend2(-1),0.13533528323);
+  EXPECT_NEAR(addend2(0),1.0,1e-6);
+  EXPECT_NEAR(addend2(1),7.38905609893,1e-6);
+  EXPECT_NEAR(addend2(-1),0.13533528323,1e-6);
 }
 
 TEST(FunctionTesting, test_y){
-  EXPECT_DOUBLE_EQ(y(0),-1.0);
-  EXPECT_DOUBLE_EQ(y(1),0.999847695-7.38905609893);
-  EXPECT_DOUBLE_EQ(y(-1),-0.999847695-0.13533528323);
+  EXPECT_NEAR(y(0),-1.0,1e-6);
+  EXPECT_NEAR(y(1),0.999847695-7.38905609893,1e-6);
+  EXPECT_NEAR(y(-1),-0.999847695-0.13533528323,1e-6);
 }
 
 int main(int argc, char **argv)
